@@ -5,16 +5,16 @@
 # Node IAM role policy attachment
 # Commercial partition only - `moved` does now allow multiple moves to same target
 moved {
-  from = aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"]
+  from = aws_iam_role_policy_attachment.this["arn:aws-us-gov:iam::aws:policy/AmazonEKSWorkerNodePolicy"]
   to   = aws_iam_role_policy_attachment.this["AmazonEKSWorkerNodePolicy"]
 }
 
 moved {
-  from = aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"]
+  from = aws_iam_role_policy_attachment.this["arn:aws-us-gov:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"]
   to   = aws_iam_role_policy_attachment.this["AmazonEC2ContainerRegistryReadOnly"]
 }
 
 moved {
-  from = aws_iam_role_policy_attachment.this["arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"]
+  from = aws_iam_role_policy_attachment.this["arn:aws-us-gov:iam::aws:policy/AmazonEKS_CNI_Policy"]
   to   = aws_iam_role_policy_attachment.this["AmazonEKS_CNI_Policy"]
 }
